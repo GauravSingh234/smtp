@@ -1,3 +1,4 @@
+{% csrf_token %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +8,12 @@
 </head>
 <body>
     <div>
-        <a href="{% url 'send_email' %}">
+        {% comment %} <a href="{% url 'send_email' %}">
             <button>SEND E-MAIL</button>
-        </a>
+        </a> {% endcomment %}
+        <a href = "{% url 'send_email' %}">Send Email</a>
+        
+
     </div>
 </body>
 </html>

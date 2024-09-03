@@ -6,7 +6,12 @@ from .import views
 
 urlpatterns = [
     path('create/' , bookviewset.as_view()),
-    path('' , views.send_email )
+    path('send_email/' , views.send_email , name = "send_email" ),
+    path('' , views.index , name = "index" ),
+    path('home/' , views.home , name = "home" ),
+
+
+
 
 
 ]
